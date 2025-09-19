@@ -1,4 +1,6 @@
-const fs = require('fs'); /*contante chamando/requerindo o modulo fs (file system*/
+//const fs = require('fs'); //contante chamando/requerindo o modulo fs (file system
+
+import fs from 'fs'; //usando a sintaxe do ES6 para importar o modulo fs
 
 fs.readFile('example.txt', 'utf8', (err, data) => { //callback, lendo um arquivo de forma assincrona
     if (err) { //tratando o erro

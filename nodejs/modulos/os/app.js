@@ -1,4 +1,5 @@
-const os = require('os'); //importando o modulo os (operating system)
+//const os = require('os'); //importando o modulo os (operating system)
+import os from 'os'; //usando a sintaxe do ES6 para importar o modulo os
 
 //exibindo informacoes sobre o sistema operacional
 console.log('Arquitetura do sistema:', os.arch()); //exibindo a arquitetura do sistema
