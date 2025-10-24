@@ -1,15 +1,13 @@
 module.exports = {
-  verificaLogin: (nome, email, senha) => {
-    let emailsenha;
+  verificaLogin: (email, senha) => {
+    let emailSenha;
 
-    if (email = roxovalentina@gmail.com) {
-      emailsenha = "válido";
-    } and (senha = 123456) {
-      emailsenha = "válido";
+    if (email === "roxovalentina@gmail.com" && senha === "123456") {
+      emailSenha = true;
+      return 'Login bem-sucedido!';
     } else {
-      emailsenha = "inválido";
-    }
-
-    return `Olá, ${nome}! Você é um(a) ${faixaEtaria}, do gênero ${genero}. Seja bem-vindo(a)!`;
-  }
+      emailSenha = false;
+      return 'Email ou senha incorretos. Tente novamente.';
+    } 
+  } 
 };
