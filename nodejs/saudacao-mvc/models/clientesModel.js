@@ -1,13 +1,12 @@
 module.exports = {
   verificaLogin: (email, senha) => {
-    let emailSenha;
+    let acesso;
 
     if (email === "roxovalentina@gmail.com" && senha === "123456") {
-      emailSenha = true;
-      return 'Login bem-sucedido!';
+      acesso = "liberado";
     } else {
-      emailSenha = false;
-      return 'Email ou senha incorretos. Tente novamente.';
+      acesso = "negado"
     } 
+    return `Acesso ${acesso} para o usuário com email: ${email}`;
   } 
 };
